@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Página Inicial</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+ background-image: url('imagens/capa para o trabalho.jpg'); /* Defina o caminho da sua imagem de fundo */
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ }
+ .container {
+ text-align: center;
+ background-color: rgba(255, 255, 255, 0.7);
+ padding: 20px;
+ border-radius: 10px;
+ width: 300px;
+ }
+ .logo {
+ width: 250px;
+ margin-bottom: 10px;
+ }
+ h1 {
+ font-size: 24px;
+ margin-bottom: 20px;
+ }
+ .btn {
+ padding: 10px 20px;
+ font-size: 16px;
+ background-color: #007bff;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ }
+ .btn:hover {
+ background-color: #0056b3;
+ }
+ footer {
+ position: fixed;
+ bottom: 10px;
+ left: 10px;
+ font-size: 14px;
+ color: #333;
+ background-color: rgba(255, 255, 255, 0.8);
+ padding: 5px;
+ border-radius: 5px;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+ }
+ footer a {
+ text-decoration: none;
+ color: #007bff;
+ }
+ footer a:hover {
+ color: #0056b3;
+ }
+ </style>
+</head>
+<body>
+
+<div class="container">
+ <img src="imagens/logo.trabalho.jpg" alt="Logo" class="logo"><!-- Defina o caminho do seu logo -->
+ <h1>Bem-vindo ao Sistema</h1>
+ <a href="registro.jsp">
+ <a href="registro/index.html"><button class="btn"> Realizar Registro </button></a><p>
+ <a href="consulta/consultaemTab.jsp"><button class="btn"> Consultar Capas</button></a><p>
+  <a href="consultaID/index.html"><button class="btn"> Consultar por ID</button></a><p>    
+ <a href="alterarCapa/index.html"><button class="btn"> Alterar dados da Capa</button></a><p>
+ <a href="excCapa/index.jsp"><button class="btn">Excluir um registro</button></a><p>
+</div>
+
+<!-- Referência bibliográfica no rodapé -->
+<footer>
+<p>Referência: <a href="https://www.wiley.com/en-us/HTML+and+CSS%3A+Design+and+Build+Websites-p-9781118008188" target="_blank">Duckett, J. (2011). *HTML and CSS: Design and Build Websites*. Wiley.</a> - Acesso em 26 de Novembro de 2024.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Capa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1.1em;
+            background-color: #f7f7f7;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+
+        .back-btn a {
+            color: #007bff;
+            font-size: 1.1em;
+            text-decoration: none;
+        }
+
+        .back-btn a:hover {
+            text-decoration: underline;
+        }
+
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            input[type="text"], input[type="submit"] {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Consultar Capa</h2>
+        <form action="alterar.jsp" method="post">
+            <label for="id">Informe o ID da Capa:</label>
+            <input type="text" id="id" name="id" required>
+            <input type="submit" value="Consultar">
+        </form>
+        
+        <div class="back-btn">
+            <a href="../index.html">Voltar para a Página Inicial</a>
+        </div>
+    </div>
+</body>
+</html>
